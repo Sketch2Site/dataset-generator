@@ -36,8 +36,12 @@ function joinPaddings(paddings) {
   return { x, y };
 }
 
-function entropy(multiplier = 100) {
+function entropy(multiplier) {
   return Math.floor(Math.random() * multiplier);
+}
+
+function swingEntropy(multiplier) {
+  return entropy(multiplier) - entropy(multiplier);
 }
 
 function verbose(x) {

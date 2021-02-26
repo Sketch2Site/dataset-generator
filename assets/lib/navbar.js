@@ -5,28 +5,28 @@ function generateNavbar() {
    */
   const offset = {
     outerBox: {
-      x: 10 + entropy(),
-      y: 10 + entropy(),
+      x: 10 + entropy(100),
+      y: 10 + entropy(100),
     },
 
     leftLogo: {
-      x: 15,
-      y: 15,
+      x: 15 + swingEntropy(5),
+      y: 15 + swingEntropy(5),
     },
 
     rightLink1: {
-      x: 860,
-      y: 35,
+      x: 860 + swingEntropy(30),
+      y: 35 + swingEntropy(10),
     },
 
     rightLink2: {
-      x: 860 - 100 - 50 - entropy(10) + entropy(20),
-      y: 35 - entropy(20) + entropy(10),
+      x: 860 - 100 - 50 + swingEntropy(30),
+      y: 35 + swingEntropy(10),
     },
 
     rightLink3: {
-      x: 860 - 100 - 50 - 100 - 50 - entropy(10) + entropy(20),
-      y: 35 - entropy(20) + entropy(10),
+      x: 860 - 100 - 50 - 100 - 50 + swingEntropy(30),
+      y: 35 + swingEntropy(10),
     },
   };
 
@@ -36,17 +36,17 @@ function generateNavbar() {
   const dimension = {
     outerBox: {
       width: 1000,
-      height: 70,
+      height: 70 + swingEntropy(20),
     },
 
     leftLogo: {
-      width: 150,
-      height: 40,
+      width: 150 + swingEntropy(30),
+      height: 40 + swingEntropy(10),
     },
 
     rightLink: {
-      width: 100,
-      height: 4,
+      width: 100 + swingEntropy(20),
+      height: 4 + swingEntropy(4),
     },
   };
 
@@ -58,8 +58,8 @@ function generateNavbar() {
       stroke: "gray",
       fill: "rgba(255,255,255,0.6)",
       fillStyle: "solid",
-      roughness: 2,
-      strokeWidth: 3,
+      roughness: 2 + entropy(2),
+      strokeWidth: 2 + entropy(3),
     })
   );
 
@@ -76,8 +76,8 @@ function generateNavbar() {
         stroke: "gray",
         fill: "rgba(255,255,255,0.6)",
         fillStyle: "solid",
-        roughness: 1,
-        strokeWidth: 4,
+        roughness: 1 + entropy(2),
+        strokeWidth: 4 + swingEntropy(2),
       }
     )
   );
@@ -95,8 +95,8 @@ function generateNavbar() {
         stroke: "gray",
         fill: "rgba(255,255,255,0.6)",
         fillStyle: "solid",
-        roughness: 2,
-        strokeWidth: 10,
+        roughness: 2 + entropy(4),
+        strokeWidth: 6 + swingEntropy(5),
       }
     )
   );
@@ -111,8 +111,8 @@ function generateNavbar() {
         stroke: "gray",
         fill: "rgba(255,255,255,0.6)",
         fillStyle: "solid",
-        roughness: 2,
-        strokeWidth: 10,
+        roughness: 2 + entropy(4),
+        strokeWidth: 6 + swingEntropy(5),
       }
     )
   );
@@ -127,8 +127,8 @@ function generateNavbar() {
         stroke: "gray",
         fill: "rgba(255,255,255,0.6)",
         fillStyle: "solid",
-        roughness: 2,
-        strokeWidth: 10,
+        roughness: 2 + entropy(4),
+        strokeWidth: 6 + swingEntropy(5),
       }
     )
   );

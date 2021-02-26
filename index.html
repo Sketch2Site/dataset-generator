@@ -17,21 +17,21 @@
 <body id="generateEvent">
     <svg id="svg"></svg>
 
-    < <script>
+    <script>
         const svg = document.getElementById('svg');
         const rc = rough.svg(svg);
 
         document.getElementById("generateEvent").addEventListener("click", () => {
-        clearCanvas()
-        generateNavbar();
+            clearCanvas()
+            generateNavbar();
         });
 
         generateNavbar();
         function clearCanvas() {
-        document.getElementById("svg").innerHTML = ""
+            document.getElementById("svg").innerHTML = ""
         }
 
-        </script>
+    </script>
 </body>
 
 </html>
