@@ -5,7 +5,6 @@
  */
 function dimensionTransform(padding, dimension) {
   const offset = joinPaddings(padding);
-  verbose(offset);
 
   return [
     [offset.x, offset.y],
@@ -35,6 +34,10 @@ function joinPaddings(paddings) {
   });
 
   return { x, y };
+}
+
+function entropy(multiplier = 100) {
+  return Math.floor(Math.random() * multiplier);
 }
 
 function verbose(x) {

@@ -1,11 +1,12 @@
-function generateNavbar(entropy) {
+function generateNavbar() {
+  console.log();
   /**
    * Offset from the margins for the diagram
    */
   const offset = {
     outerBox: {
-      x: 10,
-      y: 10,
+      x: 10 + entropy(),
+      y: 10 + entropy(),
     },
 
     leftLogo: {
@@ -19,13 +20,13 @@ function generateNavbar(entropy) {
     },
 
     rightLink2: {
-      x: 860 - 100 - 50,
-      y: 35,
+      x: 860 - 100 - 50 - entropy(10) + entropy(20),
+      y: 35 - entropy(20) + entropy(10),
     },
 
     rightLink3: {
-      x: 860 - 100 - 50 - 100 - 50,
-      y: 35,
+      x: 860 - 100 - 50 - 100 - 50 - entropy(10) + entropy(20),
+      y: 35 - entropy(20) + entropy(10),
     },
   };
 

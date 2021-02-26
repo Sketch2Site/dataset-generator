@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>RoughJS sample</title>
+    <title>Dataset Generator</title>
     <script src="assets/lib/util.js"></script>
     <script src="assets/lib/rough.js"></script>
     <script src="assets/lib/navbar.js"></script>
@@ -14,26 +14,24 @@
     </style>
 </head>
 
-<body>
-    <h2>Dataset Generator</h2>
-    <button id="generateButton">Generate</button>
+<body id="generateEvent">
     <svg id="svg"></svg>
 
-    <script>
+    < <script>
         const svg = document.getElementById('svg');
         const rc = rough.svg(svg);
 
-        document.getElementById("generateButton").addEventListener("click", () => {
-            clearCanvas()
-            generateNavbar(Math.random() * 30);
+        document.getElementById("generateEvent").addEventListener("click", () => {
+        clearCanvas()
+        generateNavbar();
         });
 
-        generateNavbar(Math.random() * 30);
+        generateNavbar();
         function clearCanvas() {
-            document.getElementById("svg").innerHTML = ""
+        document.getElementById("svg").innerHTML = ""
         }
 
-    </script>
+        </script>
 </body>
 
 </html>
