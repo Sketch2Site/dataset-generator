@@ -9,8 +9,23 @@ function generateNavbar(entropy) {
     },
 
     leftLogo: {
-      x: 8,
-      y: 8,
+      x: 15,
+      y: 15,
+    },
+
+    rightLink1: {
+      x: 860,
+      y: 35,
+    },
+
+    rightLink2: {
+      x: 860 - 100 - 50,
+      y: 35,
+    },
+
+    rightLink3: {
+      x: 860 - 100 - 50 - 100 - 50,
+      y: 35,
     },
   };
 
@@ -25,7 +40,12 @@ function generateNavbar(entropy) {
 
     leftLogo: {
       width: 150,
-      height: 50,
+      height: 40,
+    },
+
+    rightLink: {
+      width: 100,
+      height: 4,
     },
   };
 
@@ -37,8 +57,8 @@ function generateNavbar(entropy) {
       stroke: "gray",
       fill: "rgba(255,255,255,0.6)",
       fillStyle: "solid",
-      roughness: 1,
-      strokeWidth: 2,
+      roughness: 2,
+      strokeWidth: 3,
     })
   );
 
@@ -56,7 +76,58 @@ function generateNavbar(entropy) {
         fill: "rgba(255,255,255,0.6)",
         fillStyle: "solid",
         roughness: 1,
-        strokeWidth: 2,
+        strokeWidth: 4,
+      }
+    )
+  );
+
+  /**
+   * add link draawings to the right
+   */
+  svg.appendChild(
+    rc.polygon(
+      dimensionTransform(
+        [offset.outerBox, offset.rightLink1],
+        dimension.rightLink
+      ),
+      {
+        stroke: "gray",
+        fill: "rgba(255,255,255,0.6)",
+        fillStyle: "solid",
+        roughness: 2,
+        strokeWidth: 10,
+      }
+    )
+  );
+
+  svg.appendChild(
+    rc.polygon(
+      dimensionTransform(
+        [offset.outerBox, offset.rightLink2],
+        dimension.rightLink
+      ),
+      {
+        stroke: "gray",
+        fill: "rgba(255,255,255,0.6)",
+        fillStyle: "solid",
+        roughness: 2,
+        strokeWidth: 10,
+      }
+    )
+  );
+
+  svg.appendChild(
+    rc.polygon(
+      dimensionTransform(
+        [offset.outerBox, offset.rightLink3],
+        dimension.rightLink
+      ),
+      {
+        stroke: "gray",
+        fill: "rgba(255,255,255,0.6)",
+        fillStyle: "solid",
+        roughness: 2,
+        strokeWidth: 10,
       }
     )
   );
