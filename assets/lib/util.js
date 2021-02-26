@@ -5,6 +5,7 @@
  */
 function dimensionTransform(padding, dimension) {
   const offset = joinPaddings(padding);
+  verbose(offset);
 
   return [
     [offset.x, offset.y],
@@ -23,13 +24,19 @@ function joinPaddings(paddings) {
   let x = 0;
   let y = 0;
 
-  Object.keys(paddings).forEach((key) => {
-    if (key === "x") {
-      x += paddings["x"];
-    } else if (key === "y") {
-      y += paddings["y"];
-    }
+  paddings.forEach((padding) => {
+    Object.keys(padding).forEach((key) => {
+      if (key === "x") {
+        x += padding["x"];
+      } else if (key === "y") {
+        y += padding["y"];
+      }
+    });
   });
 
   return { x, y };
+}
+
+function verbose(x) {
+  console.log(x);
 }
