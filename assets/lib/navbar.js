@@ -1,4 +1,7 @@
 function generateNavbar(entropy) {
+  /**
+   * Offset from the margins for the diagram
+   */
   const offset = {
     outerBox: {
       x: 10,
@@ -11,6 +14,9 @@ function generateNavbar(entropy) {
     },
   };
 
+  /**
+   * Dimensions of the drawings
+   */
   const dimension = {
     outerBox: {
       width: 1000,
@@ -23,7 +29,9 @@ function generateNavbar(entropy) {
     },
   };
 
-  // outer box for navbar component
+  /**
+   * outer box for navbar component
+   */
   svg.appendChild(
     rc.polygon(dimensionTransform([offset.outerBox], dimension.outerBox), {
       stroke: "gray",
@@ -34,6 +42,9 @@ function generateNavbar(entropy) {
     })
   );
 
+  /**
+   * inner logo box on the left
+   */
   svg.appendChild(
     rc.polygon(
       dimensionTransform(
