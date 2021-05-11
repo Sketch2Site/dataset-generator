@@ -47,3 +47,11 @@ function swingEntropy(multiplier) {
 function verbose(x) {
   console.log(x);
 }
+
+function publishDimensions(o) {
+  document.getElementById("xMin").value = o.xMin;
+  document.getElementById("yMin").value = o.yMin;
+  document.getElementById("xMax").value = o.xMax;
+  document.getElementById("yMax").value = o.yMax;
+  document.getElementById("label").value = o.label;
+}

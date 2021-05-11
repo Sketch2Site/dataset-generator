@@ -1,5 +1,4 @@
 function generateNavbar() {
-  console.log();
   /**
    * Offset from the margins for the diagram
    */
@@ -132,4 +131,15 @@ function generateNavbar() {
       }
     )
   );
+
+  /** publish data to webpage */
+  const bound = dimensionTransform([offset.outerBox], dimension.outerBox);
+  const padding = 10;
+  publishDimensions({
+    xMin: bound[0][0] > padding ? bound[0][0] - padding : 0,
+    yMin: bound[0][1] > padding ? bound[0][1] - padding : 0,
+    xMax: bound[2][0] + padding,
+    yMax: bound[2][1] + padding,
+    label: "navbar",
+  });
 }

@@ -4,7 +4,11 @@
     <title>Dataset Generator</title>
     <script src="assets/lib/util.js"></script>
     <script src="assets/lib/rough.js"></script>
+
+    <!-- the selection in next blocks decides which page is generated next -->
     <script src="assets/lib/navbar.js"></script>
+
+
     <style>
         svg {
             display: block;
@@ -17,6 +21,13 @@
 <body id="generateEvent">
     <svg id="svg"></svg>
 
+    <!-- data to be consumed by bot that saves images-->
+    <input type="hidden" name="xMin" id="xMin" />
+    <input type="hidden" name="yMin" id="yMin" />
+    <input type="hidden" name="xMax" id="xMax" />
+    <input type="hidden" name="yMax" id="yMax" />
+    <input type="hidden" name="label" id="label" />
+    <!-- ends-->
     <script>
         const svg = document.getElementById('svg');
         const rc = rough.svg(svg);
