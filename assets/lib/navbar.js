@@ -1,4 +1,7 @@
 function generateNavbar() {
+  /** change site title to easily highlight what generator is currently linked */
+  document.title = "Navbar | Dataset Generator";
+
   /**
    * Offset from the margins for the diagram
    */

@@ -1,4 +1,6 @@
 function generateLeftHero() {
+  /** change site title to easily highlight what generator is currently linked */
+  document.title = "Right Hero | Dataset Generator";
   /**
    * Offset from the margins for the diagram
    */
@@ -235,6 +237,6 @@ function generateLeftHero() {
     yMin: Math.ceil(boxDimensions[0][1]),
     xMax: Math.ceil(boxDimensions[2][0]),
     yMax: Math.ceil(boxDimensions[2][1]) + 15,
-    label: "cover_image",
+    label: "hero_left",
   });
 }

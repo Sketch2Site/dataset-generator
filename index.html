@@ -8,8 +8,8 @@
     <!-- the selection in next blocks decides which page is generated next -->
     <!-- <script src="assets/lib/navbar.js"></script> -->
     <!-- <script src="assets/lib/coverimage.js"></script> -->
-    <script src="assets/lib/leftHero.js"></script>
-
+    <!-- <script src="assets/lib/leftHero.js"></script> -->
+    <script src="assets/lib/rightHero.js"></script>
 
     <style>
         svg {
@@ -30,6 +30,7 @@
     <input type="hidden" name="yMax" id="yMax" />
     <input type="hidden" name="label" id="label" />
     <!-- ends-->
+
     <script>
         const svg = document.getElementById('svg');
         const rc = rough.svg(svg);
@@ -38,12 +39,15 @@
             clearCanvas()
             // generateNavbar();
             // generateCoverImage()
-            generateLeftHero()
+            // generateLeftHero()
+            generateRightHero()
+
         });
 
         // generateNavbar();
         // generateCoverImage()
-        generateLeftHero()
+        // generateLeftHero()
+        generateRightHero()
 
 
         function clearCanvas() {

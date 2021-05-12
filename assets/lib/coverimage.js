@@ -1,4 +1,7 @@
 function generateCoverImage() {
+  /** change site title to easily highlight what generator is currently linked */
+  document.title = "Cover Image | Dataset Generator";
+
   /**
    * Offset from the margins for the diagram
    */
