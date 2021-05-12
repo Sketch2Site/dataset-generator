@@ -198,15 +198,15 @@ function generateRightHero() {
   /**
    * uncomment the following lines to see the bounding box on canvas
    */
-  svg.appendChild(
-    rc.polygon(boxDimensions, {
-      stroke: "red",
-      fill: "rgba(192, 192, 192, 0.5)",
-      fillStyle: "zigzag",
-      roughness: 2,
-      strokeWidth: 2,
-    })
-  );
+  //   svg.appendChild(
+  //     rc.polygon(boxDimensions, {
+  //       stroke: "red",
+  //       fill: "rgba(192, 192, 192, 0.5)",
+  //       fillStyle: "zigzag",
+  //       roughness: 2,
+  //       strokeWidth: 2,
+  //     })
+  //   );
 
   /** embed document labels into webpage */
   publishDimensions({
