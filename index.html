@@ -7,7 +7,8 @@
 
     <!-- the selection in next blocks decides which page is generated next -->
     <!-- <script src="assets/lib/navbar.js"></script> -->
-    <script src="assets/lib/coverimage.js"></script>
+    <!-- <script src="assets/lib/coverimage.js"></script> -->
+    <script src="assets/lib/leftHero.js"></script>
 
 
     <style>
@@ -36,11 +37,13 @@
         document.getElementById("generateEvent").addEventListener("click", () => {
             clearCanvas()
             // generateNavbar();
-            generateCoverImage()
+            // generateCoverImage()
+            generateLeftHero()
         });
 
         // generateNavbar();
-        generateCoverImage()
+        // generateCoverImage()
+        generateLeftHero()
 
 
         function clearCanvas() {
