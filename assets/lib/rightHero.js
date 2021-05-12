@@ -55,7 +55,7 @@ function generateRightHero() {
   );
   svg.appendChild(
     rc.polygon(heroImageDimensions, {
-      stroke: "red",
+      stroke: "black",
       fill: "rgba(255,255,255,0.6)",
       fillStyle: "solid",
       roughness: 2 + entropy(2),
